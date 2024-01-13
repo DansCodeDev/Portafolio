@@ -1,0 +1,438 @@
+body {
+    font-family: "Poppins";
+    font-size: 18px;
+    margin: 0;
+    height: 100vh;
+    background: #1a2027 ;
+}
+ 
+a{ 
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    background-color: #194569;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 120px;
+    height: 140px;
+}
+
+.izq {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    box-shadow: 0 0 10px rgb(0, 0, 0 / 8%);
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.menu {
+    height: 20px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.menu > li:hover > a {
+    color: #f9532d;
+}
+
+.menu > li:hover > a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+.menu > li a {
+    color: #fff;
+    position: relative;
+    
+}
+
+.menu > li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+    background: #f9532d;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+}
+
+#inicio {
+    color: #fff; /* Color del texto en la sección de inicio */
+    padding: 10px; 
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mih1 {
+    font-size: 35px;
+}
+
+.Presentacion{
+    display: flex;
+    align-items: center;
+}
+
+.carrusel img {
+    margin-left: 150px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    height: 300px;
+}
+
+.texto {
+    flex: 1;
+    text-align: start;
+    margin-left: 150px;
+    margin-bottom: 0;
+}
+
+.texto h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.texto h3 {
+    margin-bottom: 0;
+}
+
+.texto p {
+    margin-bottom: 0%;
+    font-size: 30px;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /*margin-right: 780px;*/
+    transition: all 1s ease;
+}
+
+.icono :hover {
+    transform: scale(1.1);
+}
+
+.icono a{
+    font-size: 2em;
+    margin-right: 30px;
+    color: #f9532d;
+}
+
+.cv button{
+    margin-left: 10px;
+    background-color: transparent;
+    border: 3px solid; 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #f9532d;
+    border-radius: 5px;
+}
+
+
+.about{
+    color: #fff;
+    margin-left: 150px;
+    padding: 30px;
+}
+
+.about h1{
+    font-size: 50px;
+    text-decoration: none;
+    color: #f9532d;
+    
+}
+
+/* Estilo para la sección "Datos Personales" */
+.Personales {
+    font-size: 25px;
+    float: left; /* Hace que la sección se ubique a la izquierda */
+    width: 40%; /* Ocupa el 50% del ancho del contenedor principal */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.Personales h3 {
+    margin-bottom: 50px;
+}
+
+.ListaDatos ul {
+    list-style-type: none; /* Quita los puntos de las listas */
+    padding: 0;
+    margin: 0;
+}
+
+.ListaDatos li {
+    padding: 0px;
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+}
+
+.ListaDatos{
+    display: flex;
+    justify-content: start;
+}
+
+.highlight {
+    background-color: #f9532d; 
+    text-align: center;
+    color: #1a2027;
+}
+
+/* Estilo para la sección "Intereses" */
+.Intereses {
+    font-size: 25px;
+    float: left; /* Hace que la sección se ubique a la derecha */
+    width: 50%; /* Ocupa el 50% del ancho del contenedor principal */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    
+}
+
+.iconosIntereses {
+    display: flex;
+    justify-content: start;
+}
+
+.Intereses h3 {
+    margin-left: 30px;
+}
+
+.iconosIntereses ul {
+    list-style: none; /* Quita los estilos de la lista */
+    padding: 0; /* Quita el padding de la lista */
+    margin: 30px;
+    display: flex; /* Utiliza flexbox para alinear los iconos */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.iconosIntereses li {
+    text-align: center; /* Centra el texto */
+    margin-top: 5px; /* Añade espacio superior entre el icono y el nombre */
+    padding: 20px;
+    border-radius: 10px; 
+    border: 1px solid #f9532d;
+    display: flex; /* Utiliza flexbox para alinear los iconos */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center;
+    background: #f9532d;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 10px;
+    color: #1a2027;
+}
+
+/* Limpia el float para evitar problemas de diseño después de las secciones flotantes */
+.Datos::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+section {
+    flex:0 0 calc(30% - 20px);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #194569;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+#skills {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font: bold;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.skill {
+    width: 100%;
+    height: 66vh;
+}
+
+.skill h2 {
+    margin-bottom: 70px;
+}
+
+.skill img {
+    max-height: 120px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+    vertical-align: middle;
+    transition: all 0.5s ease;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+}
+
+.skill ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Utiliza flexbox para alinear horizontalmente los elementos de la lista */
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.skill li {
+    display: flex; /* Utiliza flexbox para alinear horizontalmente la imagen y el texto */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor flex */
+    margin: 0 20px 10px 0;
+}
+
+.skill li img {
+    margin-bottom: 20px;
+}
+
+.skill li div {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen arriba del texto */
+    align-items: center; /* Centra horizontalmente el contenido del div */
+    margin-left: 10px;
+}
+
+section#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+
+section#projects .project {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+section#projects .project img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+section#projects .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.942);
+}
+
+/* Estilos para la sección "Contact" */
+section#contact {
+    padding: 50px 0;
+}
+
+section#contact h2 {
+    text-align: center; /* Centra el título de la sección */
+    margin-bottom: 30px; /* Agrega espacio entre el título y el formulario */
+}
+
+section#contact form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: 600px; /* Establece un ancho máximo para el formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+section#contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+section#contact form input, section#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+section#contact form button {
+    width: 100%;
+    padding: 10px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section#contact form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #194569;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: auto;
+    width: 100%;
+    
+}
